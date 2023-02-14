@@ -13,7 +13,52 @@ const Navbar = () => {
         <div>
           <GiHamburgerMenu />
         </div>
-        <Link to="/"></Link>
+        <Link to="/">
+          <div className="flex gap-1 items-center justify-center">
+            <BsYoutube className="text-3xl text-red-600" />
+            <span className="text-xl font-medium">Youtube</span>
+          </div>
+        </Link>
+      </div>
+      <div className="flex items-center justify-center gap-5">
+        <form>
+          <div className="flex bg-zinc-900 items-center h-10 px-4 pr-0">
+            <div className="flex gap-4 items-center pr-5">
+              <div>
+                <AiOutlineSearch className="text-xl" />
+              </div>
+              <input
+                type="text"
+                className="w-96 bg-zinc-900 focus:outline-none border-none"
+              />
+
+              <AiOutlineClose className="text-xl cursor-pointer" />
+            </div>
+            <button className="h-10 w-16 flex items-center justify-center bg-zinc-800 ">
+              <AiOutlineClose className="text-xl" />
+            </button>
+          </div>
+        </form>
+
+        <div className="text-xl p-3 bg-zinc-900 rounded-full">
+          <TiMicrophone />
+        </div>
+      </div>
+
+      <div className="flex gap-5 items-center text-xl">
+        <BsCameraVideo />
+        <IoAppsSharp />
+        <div className="relative">
+          <BsBell />
+          <span className="absolute bottom-2 left-2 text-xs bg-red-600 rounded-full px-1">
+            9+
+          </span>
+        </div>
+        <img
+          src="https://yt3.ggpht.com/wgnEbc2Ec2JYkeyzUbiHzDlAFObI2Btwo2YRCEF1aCMBiRc5E_zWy8-URBQS3EMQ1yzzaGFR=s88-c-k-c0x00ffffff-no-rj-mo"
+          alt="logo"
+          className="w-9 h-9 rounded-full"
+        />
       </div>
     </div>
   );
